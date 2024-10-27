@@ -206,7 +206,7 @@ nav ul {
 
 .contact-info {
     display: flex; /* Aligns boxes in a row */
-    justify-content: space-around; /* Distributes space between boxes */
+    justify-content: space-between; /* Distributes space between boxes */
     margin-top: 20px; /* Space above the info boxes */
     flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
@@ -215,8 +215,10 @@ nav ul {
     background: rgb(0, 37, 116);
     border-radius: 20px; /* Rounds corners */
     padding: 30px; /* Adds padding */
-    width: 30%; /* Sets a width for each box */
+    flex: 1 1 200px; /* Flexible growth with a minimum width */
     margin: 10px; /* Adds margin for spacing */
+    text-align: center; /* Centers text inside boxes */
+    min-height: 150px; /* Ensures a minimum height for all boxes */
 }
 
 .info-box i {
@@ -227,7 +229,7 @@ nav ul {
 }
 
 .info-box h4 {
-    font-size: 25px;
+    font-size: 25px; /* Adjusted heading size */
     margin: 0; /* Removes margin from heading */
 }
 
@@ -290,50 +292,16 @@ footer {
     #about,
     #contact,
     #bprojects {
-        padding: 20px; /* Consistent padding for sections */
-        margin: 10px auto; /* Center and space sections */
-        width: 90%; /* Limit section width */
+        padding: 20px; /* Add padding for sections */
+        margin: 0; /* Remove margin */
     }
 
     .container {
-        flex-direction: column; /* Stack boxes vertically */
-        align-items: center; /* Center boxes */
+        flex-direction: column; /* Stack boxes vertically on smaller screens */
     }
 
     .box {
-        width: 90%; /* Full width with some margins */
-        margin: 10px 0; /* Space between boxes */
-    }
-
-    .image-container {
-        flex-direction: column; /* Stack images vertically */
-        align-items: center; /* Center images */
-        margin-top: 20px; /* Space above images */
-    }
-
-    .image-container a {
-        margin: 10px 0; /* Space between images */
-    }
-
-    .info-box {
-        width: 90%; /* Limit the width of info boxes */
-        margin: 10px auto; /* Center and space info boxes */
-    }
-
-    footer {
-        padding: 15px; /* Consistent footer padding */
-        width: 100%; /* Full width for footer */
-    }
-}
-
-@media (max-width: 768px) {
-    .contact-info {
-        flex-direction: column; /* Stack contact info boxes vertically */
-        align-items: center; /* Center boxes */
-    }
-
-    .info-box {
-        width: 80%; /* Make info boxes full width on mobile */
-        margin: 10px 0; /* Space between info boxes */
+        width: 100%; /* Full width on small screens */
+        margin: 10px 0; /* Margin for spacing */
     }
 }
