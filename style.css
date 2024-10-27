@@ -133,6 +133,7 @@ nav ul {
 .container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
     gap: 10px; /* Spacing between boxes */
 }
 
@@ -209,6 +210,8 @@ nav ul {
     justify-content: space-between; /* Distributes space between boxes */
     margin-top: 20px; /* Space above the info boxes */
     flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 10px; /* Spacing between boxes */
+    padding: 0 15px; /* Padding to avoid horizontal scroll */
 }
 
 .info-box {
@@ -286,22 +289,16 @@ footer {
     }
 
     .nav-menu li {
-        margin: 5px 0; /* Add margin between menu items */
+        margin: 5px 0; /* Space between menu items */
     }
 
-    #about,
-    #contact,
-    #bprojects {
-        padding: 20px; /* Add padding for sections */
-        margin: 0; /* Remove margin */
-    }
-
-    .container {
-        flex-direction: column; /* Stack boxes vertically on smaller screens */
+    #contact .contact-info {
+        flex-direction: column; /* Stack boxes vertically */
+        align-items: center; /* Center boxes */
     }
 
     .box {
-        width: 100%; /* Full width on small screens */
+        width: 100%; /* Full width on mobile */
         margin: 10px 0; /* Margin for spacing */
     }
 }
