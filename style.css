@@ -35,7 +35,10 @@ nav {
     margin-left: 20px;
     font-weight: 540;
 }
-
+.nav-menu li a:hover{
+    text-deocration:underline;
+    color:rgb(5, 18, 110);
+}
 @media (max-width: 768px) {
     .nav-menu {
         font-size: 14px; /* Smaller text size on mobile */
