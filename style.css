@@ -29,9 +29,10 @@ nav {
 }
 
 .nav-menu li a {
-    text-decoration: none; /* Remove underline */
-    color: #ffffff; /* Menu item color */
-    font-size: 16px; /* Adjust text size for normal view */
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    margin-left: 22px;
 }
 
 @media (max-width: 768px) {
