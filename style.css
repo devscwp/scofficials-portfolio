@@ -34,9 +34,10 @@ nav {
     font-size: 16px;
     margin-left: 20px;
     font-weight: 540;
+    transition: border-bottom 0.3s ease;
 }
 .nav-menu li a:hover{
-    text-deocration:underline;
+    border-bottom: 2px solid rgb(5,18,110);
     color:rgb(5, 18, 110);
 }
 @media (max-width: 768px) {
