@@ -1,0 +1,325 @@
+* {
+    box-sizing: border-box; /* Ensures padding and borders are included in element's total width and height */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Sets font style */
+    line-height: 1.6; /* Improves readability */
+    margin: 0; /* Resets default margin */
+    padding: 0; /* Resets default padding */
+    background-color: rgb(100, 143, 241);
+}
+
+nav {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between logo and menu */
+    align-items: center; /* Center items vertically */
+    padding: 10px; /* Padding around the nav */
+}
+
+.nav-menu {
+    display: flex; /* Display menu items horizontally */
+    margin-left: 20px; /* Space between logo and menu */
+}
+
+.nav-menu li {
+    list-style: none; /* Remove bullets */
+    margin: 0 10px; /* Space between menu items */
+}
+
+.nav-menu li a {
+    text-decoration: none; /* Remove underline */
+    color: #ffffff; /* Menu item color */
+    font-size: 16px; /* Adjust text size for normal view */
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        font-size: 14px; /* Smaller text size on mobile */
+        flex-direction: column; /* Stack menu items vertically */
+        align-items: center; /* Center menu items */
+        margin-left: 0; /* Remove margin */
+        margin-top: 10px; /* Space above the menu */
+    }
+
+    .nav-menu li {
+        margin: 5px 0; /* Add margin between menu items */
+    }
+}
+
+#services {
+    color: #fff;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#services h2 {
+    font-size: 30px;
+}
+
+#services p {
+    margin-top: -20px;
+    color: rgb(1, 1, 94);
+    font-weight: 600;
+}
+
+header {
+    display: flex; /* Enables flexbox layout */
+    justify-content: space-between; /* Spaces out items evenly */
+    align-items: center; /* Vertically centers items */
+    padding: 20px; /* Adds padding around header */
+}
+
+.logo img {
+    max-height: 80px; /* Limits the height of the logo */
+}
+
+#about h2 {
+    font-size: 38px;
+}
+
+#about p {
+    font-size: 18px;
+}
+
+nav ul {
+    list-style: none; /* Removes bullet points */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+}
+
+#cbtn {
+    margin-top: 45px; /* Adds a top margin of 29px */
+    display: inline-block; /* Ensures the margin takes effect */
+    padding: 10px 40px;
+    background: rgb(0, 0, 82);
+    color: white;
+    border-radius: 30px;
+    border: none;
+    text-decoration: none;
+    transition: 0.5s;
+    font-weight: bold;
+    box-shadow: 0px 0px 8px rgb(251, 255, 0);
+    animation: flybtn 5s ease-in-out infinite;
+}
+
+#cbtn:hover {
+    background: rgb(78, 78, 78);
+    cursor: pointer;
+}
+
+@keyframes flybtn {
+    0% {
+        transform: translateY(15px); /* Start 20px down */
+    }
+    50% {
+        transform: translateY(-15px); /* Move up 20px */
+    }
+    100% {
+        transform: translateY(15px); /* Move back down to 20px */
+    }
+}
+
+#about {
+    background-image: linear-gradient(rgba(43, 0, 199, 0.774), rgb(0, 255, 200));
+    box-shadow: 0px 0px 8px black;
+    color: #fff;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+    text-shadow: 0px 0px 8px black;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Spacing between boxes */
+}
+
+.box {
+    width: 48%; /* Half-width for each box */
+    padding: 20px;
+    background: rgb(0, 37, 116);
+    border-radius: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.fa-brands {
+    font-size: 58px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    display: block;
+    margin-bottom: 10px;
+}
+
+.fa-code {
+    font-size: 58px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    display: block;
+    margin-bottom: 10px;
+}
+
+.main {
+    padding: 20px; /* Adds padding to main content */
+}
+
+#bprojects {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    color: white;
+    text-align: center;
+}
+
+#bprojects h2 {
+    font-size: 28px;
+}
+
+.image-container {
+    display: flex; /* Aligns images in a row */
+    justify-content: space-between; /* Space between images */
+    margin-top: 20px;
+}
+
+.image-container a {
+    flex: 1; /* Makes each link take up equal space */
+    margin: 0 5px; /* Adds space between the images */
+}
+
+.image-container img {
+    width: 100%; /* Makes the image take the full width of its container */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px; /* Rounds the corners */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.image-container img:hover {
+    transform: scale(0.95); /* Shrinks the image on hover */
+}
+
+#contact {
+    color: #fff;
+    text-align: center; /* Centers text */
+    margin: 20px 0; /* Adds vertical margin */
+}
+
+.contact-info {
+    display: flex; /* Aligns boxes in a row */
+    justify-content: space-around; /* Distributes space between boxes */
+    margin-top: 20px; /* Space above the info boxes */
+}
+
+.info-box {
+    background: rgb(0, 37, 116);
+    border-radius: 20px; /* Rounds corners */
+    padding: 30px; /* Adds padding */
+    width: 30%; /* Sets a width for each box */
+}
+
+.info-box i {
+    font-size: 30px; /* Increase icon size */
+    margin-bottom: 10px; /* Space below the icon */
+    color: #ffffff; /* Icon color */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.info-box h4 {
+    font-size: 25px;
+    margin: 0; /* Removes margin from heading */
+}
+
+.info-box p {
+    font-size: 16px;
+    margin: 0; /* Removes margin from heading */
+}
+
+.myemail {
+    color: white; /* Change the text color to white */
+}
+
+.myemail a {
+    color: white; /* Change the link color to white */
+    text-decoration: none; /* Optional: removes underline from the link */
+}
+
+.myemail a:hover {
+    text-decoration: underline; /* Optional: adds underline on hover */
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center; /* Centers footer content */
+    padding: 15px; /* Adds padding to footer */
+    background-color: rgb(0, 37, 116);
+    color: white;
+    position: relative; /* Positions the footer */
+    bottom: 0; /* Aligns footer to bottom */
+    width: 100%; /* Full width for footer */
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+
+/* Media Queries for Tablet and Mobile Responsiveness */
+@media (max-width: 1024px) {
+    body {
+        padding: 0 15px; /* Adjust body padding for tablets */
+    }
+
+    header {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center header items */
+    }
+
+    nav {
+        margin: 10px 0; /* Space between header and nav */
+    }
+
+    .nav-menu {
+        flex-direction: column; /* Stack menu items vertically */
+        align-items: center; /* Center menu items */
+        margin: 0; /* Remove margin */
+        padding: 0; /* Remove padding */
+    }
+
+    .nav-menu li {
+        margin: 5px 0; /* Add margin between menu items */
+    }
+
+    #about,
+    #contact,
+    #bprojects {
+        padding: 20px; /* Consistent padding for sections */
+        margin: 10px auto; /* Center and space sections */
+        width: 90%; /* Limit section width */
+    }
+
+    .container {
+        flex-direction: column; /* Stack boxes vertically */
+        align-items: center; /* Center boxes */
+    }
+
+    .box {
+        width: 90%; /* Full width with some margins */
+        margin: 10px 0; /* Space between boxes */
+    }
+
+    .image-container {
+        flex-direction: column; /* Stack images vertically */
+        align-items: center; /* Center images */
+        margin-top: 20px; /* Space above images */
+    }
+
+    .image-container a {
+        margin: 10px 0; /* Space between images */
+    }
+
+    .info-box {
+        width: 90%; /* Limit the width of info boxes */
+        margin: 10px 0; /* Space between info boxes */
+    }
+
+    footer {
+        padding: 15px; /* Consistent footer padding */
+        width: 100%; /* Full width for footer */
+    }
+}
