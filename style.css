@@ -89,7 +89,7 @@ nav ul {
 }
 
 #cbtn {
-    margin-top: 45px; /* Adds a top margin of 29px */
+    margin-top: 45px; /* Adds a top margin */
     display: inline-block; /* Ensures the margin takes effect */
     padding: 10px 40px;
     background: rgb(0, 0, 82);
@@ -110,13 +110,13 @@ nav ul {
 
 @keyframes flybtn {
     0% {
-        transform: translateY(15px); /* Start 20px down */
+        transform: translateY(15px); /* Start 15px down */
     }
     50% {
-        transform: translateY(-15px); /* Move up 20px */
+        transform: translateY(-15px); /* Move up 15px */
     }
     100% {
-        transform: translateY(15px); /* Move back down to 20px */
+        transform: translateY(15px); /* Move back down to 15px */
     }
 }
 
@@ -208,6 +208,7 @@ nav ul {
     display: flex; /* Aligns boxes in a row */
     justify-content: space-around; /* Distributes space between boxes */
     margin-top: 20px; /* Space above the info boxes */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
 
 .info-box {
@@ -215,6 +216,7 @@ nav ul {
     border-radius: 20px; /* Rounds corners */
     padding: 30px; /* Adds padding */
     width: 30%; /* Sets a width for each box */
+    margin: 10px; /* Adds margin for spacing */
 }
 
 .info-box i {
@@ -315,11 +317,23 @@ footer {
 
     .info-box {
         width: 90%; /* Limit the width of info boxes */
-        margin: 10px 0; /* Space between info boxes */
+        margin: 10px auto; /* Center and space info boxes */
     }
 
     footer {
         padding: 15px; /* Consistent footer padding */
         width: 100%; /* Full width for footer */
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column; /* Stack contact info boxes vertically */
+        align-items: center; /* Center boxes */
+    }
+
+    .info-box {
+        width: 80%; /* Make info boxes full width on mobile */
+        margin: 10px 0; /* Space between info boxes */
     }
 }
