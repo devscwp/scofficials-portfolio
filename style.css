@@ -8,6 +8,7 @@ body {
     margin: 0; /* Resets default margin */
     padding: 0; /* Resets default padding */
     background-color: rgb(100, 143, 241);
+    overflow-x: hidden; /* Prevents horizontal scrolling */
 }
 
 nav {
@@ -20,11 +21,11 @@ nav {
 .nav-menu {
     display: flex; /* Display menu items horizontally */
     margin-left: 20px; /* Space between logo and menu */
+    gap: 15px; /* Gap between menu items */
 }
 
 .nav-menu li {
     list-style: none; /* Remove bullets */
-    margin: 0 10px; /* Space between menu items */
 }
 
 .nav-menu li a {
@@ -36,14 +37,14 @@ nav {
 @media (max-width: 768px) {
     .nav-menu {
         font-size: 14px; /* Smaller text size on mobile */
-        flex-direction: column; /* Stack menu items vertically */
+        flex-direction: row; /* Keep items in a row */
         align-items: center; /* Center menu items */
         margin-left: 0; /* Remove margin */
         margin-top: 10px; /* Space above the menu */
     }
 
     .nav-menu li {
-        margin: 5px 0; /* Add margin between menu items */
+        margin: 5px; /* Add margin between menu items */
     }
 }
 
@@ -283,16 +284,36 @@ footer {
     }
 
     .nav-menu {
-        flex-direction: column; /* Stack menu items vertically */
+        flex-direction: row; /* Keep items in a row */
         align-items: center; /* Center menu items */
         margin: 0; /* Remove margin */
         padding: 0; /* Remove padding */
     }
 
     .nav-menu li {
-        margin: 5px 0; /* Space between menu items */
+        margin: 0 5px; /* Adjust margin between items */
     }
 
+    .container {
+        flex-direction: column; /* Stack boxes on smaller screens */
+        align-items: center; /* Center boxes */
+    }
+
+    .box {
+        width: 90%; /* Full width for boxes on smaller screens */
+    }
+
+    .contact-info {
+        flex-direction: column; /* Stack boxes vertically */
+        align-items: center; /* Center boxes */
+    }
+
+    .info-box {
+        width: 90%; /* Full width on mobile */
+    }
+}
+
+@media (max-width: 768px) {
     #contact .contact-info {
         flex-direction: column; /* Stack boxes vertically */
         align-items: center; /* Center boxes */
