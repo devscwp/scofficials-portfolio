@@ -218,6 +218,7 @@ nav ul {
     background: rgb(0, 37, 116);
     border-radius: 20px; /* Rounds corners */
     padding: 30px; /* Adds padding */
+    width:90%;
     flex: 1 1 200px; /* Flexible growth with a minimum width */
     margin: 10px; /* Adds margin for spacing */
     text-align: center; /* Centers text inside boxes */
