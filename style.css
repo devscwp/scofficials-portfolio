@@ -36,8 +36,8 @@ nav {
     font-weight: 540;
 }
 .nav-menu li a:hover{
-    color:#00ffff;;
-    border-bottom: 2px solid #00ffff;
+    border-bottom: 2px solid #02ffff;
+    color: #02ffff;
 }
 @media (max-width: 768px) {
     .nav-menu {
