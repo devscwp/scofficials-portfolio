@@ -32,8 +32,8 @@ nav {
     text-decoration: none;
     color: #ffffff;
     font-size: 16px;
-    margin-left: 20px;
-    font-weight: 540;
+    margin-right: 12px;
+    font-weight: bold;
 }
 .nav-menu li a:hover{
     border-bottom: 2px solid #02ffff;
