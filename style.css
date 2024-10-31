@@ -80,7 +80,7 @@ header {
     padding: 20px; /* Adds padding around header */
 }
 
-.logo img {
+.logo img{
     max-height: 30px; /* Limits the height of the logo */
     height: 30px;
     padding: 3px;
