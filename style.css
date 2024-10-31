@@ -81,8 +81,8 @@ header {
 }
 
 .logo img{
-    max-height: 30px; /* Limits the height of the logo */
-    height: 30px;
+    max-height: 3px; /* Limits the height of the logo */
+    height: 3px;
     padding: 3px;
 }
 
