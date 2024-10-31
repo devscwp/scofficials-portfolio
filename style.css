@@ -81,7 +81,9 @@ header {
 }
 
 .logo img {
-    max-height: 80px; /* Limits the height of the logo */
+    max-height: 30px; /* Limits the height of the logo */
+    height: 30px;
+    padding: 3px;
 }
 
 #about h2 {
