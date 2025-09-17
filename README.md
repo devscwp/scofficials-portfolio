@@ -7,7 +7,7 @@ It’s a demo portfolio website that adapts to different screen sizes (desktop, 
 
 ## 📸 Thumbnail:
 
-![Thumbnail](./thumbnail.png)  
+![Thumbnail](./thumbnail.png)
 
 ---
 
