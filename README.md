@@ -30,7 +30,7 @@ It’s a demo portfolio website that adapts to different screen sizes (desktop, 
 
 ## 🚀 Live Demo  
 
-[View Project](https://devscwp.github.io/your-repo-name/)  
+[View Project](https://devscwp.github.io/scofficials-portfolio/)  
 
 ---
 
